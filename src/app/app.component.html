@@ -1,3 +1,28 @@
-<h2>It's playground!!</h2>
-<h3>Main</h3>
+<div class="app-container">
+  <div class="background-shapes">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div *ngIf="desktopUser()" class="big-background-shapes">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
 <router-outlet />
