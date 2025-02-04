@@ -1,0 +1,79 @@
+<div class="heading-container center-content">
+  <div class="heading-text">Lotto Numbers</div>
+</div>
+
+<div class="lotto-container">
+  <form [formGroup]="lottoForm" (ngSubmit)="generateNumbers()">
+    <div class="lotto-input-container">
+      <mat-form-field class="lotto-input">
+        <mat-label>Number count?</mat-label>
+        <mat-select formControlName="numberCount">
+          <div *ngFor="let number of lottoNumberCount">
+            <mat-option [value]="number">{{ number }}</mat-option>
+          </div>
+        </mat-select>
+        <mat-hint> How many number do you need? </mat-hint>
+      </mat-form-field>
+
+      <mat-form-field class="lotto-input">
+        <mat-label>Number max</mat-label>
+        <input
+          matInput
+          type="number"
+          formControlName="numberMax"
+          [min]="numberCount!.value"
+          max="100"
+        />
+        <mat-hint> Between 1 and this value. </mat-hint>
+        <mat-error class="error-text" *ngIf="numberMax?.hasError('max')">
+          <span class="bold-text">Number cannot exceed 100</span>
+        </mat-error>
+        <mat-error class="error-text" *ngIf="numberMax?.hasError('min')">
+          <span class="bold-text">Number cannot be less than number count</span>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-checkbox class="lotto-check-box" [formControl]="bonusNumberControl">
+        <div class="lotto-check-box-font">Bonus number</div>
+      </mat-checkbox>
+    </div>
+
+    <div *ngIf="bonusNumber()">
+      <div class="lotto-input-container">
+        <mat-form-field class="lotto-input">
+          <mat-label>Bonus max</mat-label>
+          <input
+            matInput
+            type="number"
+            formControlName="bonusNumberMax"
+            min="0"
+            max="100"
+          />
+          <mat-error class="error-text" *ngIf="bonusNumberMax?.hasError('max')">
+            <span class="bold-text">Number cannot exceed 100</span>
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="lotto-output-container">
+      <div class="lotto-output" *ngIf="lottoNumbers">
+        Lotto Numbers: <span class="bold-text">{{ lottoNumbers }}</span>
+      </div>
+      <div class="lotto-output" *ngIf="bonusLottoNumber">
+        Bonus Number: <span class="bold-text">{{ bonusLottoNumber }}</span>
+      </div>
+    </div>
+
+    <div class="lotto-button-container">
+      <button mat-raised-button type="submit" [disabled]="lottoForm.invalid">
+        <mat-icon fontIcon="check"></mat-icon>Generate Numbers
+      </button>
+      <button mat-raised-button routerLink="/">
+        <mat-icon fontIcon="home"></mat-icon>Back
+      </button>
+    </div>
+  </form>
+</div>

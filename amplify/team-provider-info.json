@@ -1,6 +1,7 @@
 {
-  "prod": {
+  "dev": {
     "awscloudformation": {
+<<<<<<< HEAD
       "AuthRoleName": "amplify-playground-prod-0bb83-authRole",
       "UnauthRoleArn": "arn:aws:iam::449491765399:role/amplify-playground-prod-0bb83-unauthRole",
       "AuthRoleArn": "arn:aws:iam::449491765399:role/amplify-playground-prod-0bb83-authRole",
@@ -18,6 +19,17 @@
           "type": "manual"
         }
       }
+=======
+      "AuthRoleName": "amplify-play2-dev-a8e30-authRole",
+      "UnauthRoleArn": "arn:aws:iam::449491765399:role/amplify-play2-dev-a8e30-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::449491765399:role/amplify-play2-dev-a8e30-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-play2-dev-a8e30-deployment",
+      "UnauthRoleName": "amplify-play2-dev-a8e30-unauthRole",
+      "StackName": "amplify-play2-dev-a8e30",
+      "StackId": "arn:aws:cloudformation:eu-west-2:449491765399:stack/amplify-play2-dev-a8e30/8a42d790-e242-11ef-818d-024e81e454d9",
+      "AmplifyAppId": "d1rpaej2npk6yq"
+>>>>>>> main
     }
   }
 }

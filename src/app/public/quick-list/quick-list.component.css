@@ -1,0 +1,78 @@
+.quick-list-container {
+  border: 2px solid rgb(49, 43, 226);
+  border-radius: 2rem;
+  background-color: rgb(37, 10, 136);
+  margin-inline: 10%;
+}
+
+.list-input-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+
+.list-input {
+  width: 97%;
+  margin: 1rem;
+}
+
+.add-button {
+  width: 7rem;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-button {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.clear-button {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.clear-button-icon {
+  color: rgb(208, 28, 28);
+}
+
+.list-container {
+  background-color: rgb(49, 43, 226);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.list-entry {
+  font-size: x-large;
+  padding: 0.5rem;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+::ng-deep .list-entry .mdc-checkbox__background {
+  --mdc-checkbox-unselected-icon-color: rgb(183, 246, 196) !important;
+}
+
+@media (max-width: 768px) {
+  .quick-list-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .home-button {
+    margin-left: 1rem;
+  }
+
+  .list-entry {
+    font-size: large;
+    padding: 0.5rem;
+    color: white;
+  }
+}
