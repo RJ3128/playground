@@ -1,23 +1,15 @@
 {
-  "dev": {
+  "prod": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-playground-prod-0bb83-authRole",
-      "UnauthRoleArn": "arn:aws:iam::449491765399:role/amplify-playground-prod-0bb83-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::449491765399:role/amplify-playground-prod-0bb83-authRole",
+      "AuthRoleName": "amplify-playground-prod-cc28f-authRole",
+      "UnauthRoleArn": "arn:aws:iam::449491765399:role/amplify-playground-prod-cc28f-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::449491765399:role/amplify-playground-prod-cc28f-authRole",
       "Region": "eu-west-2",
-      "DeploymentBucketName": "amplify-playground-prod-0bb83-deployment",
-      "UnauthRoleName": "amplify-playground-prod-0bb83-unauthRole",
-      "StackName": "amplify-playground-prod-0bb83",
-      "StackId": "arn:aws:cloudformation:eu-west-2:449491765399:stack/amplify-playground-prod-0bb83/65555220-e231-11ef-bec9-0a3b5d5aa0d3",
-      "AmplifyAppId": "d1fhdexzc115lo"
-    },
-    "categories": {
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "d1fhdexzc115lo",
-          "type": "manual"
-        }
-      }
+      "DeploymentBucketName": "amplify-playground-prod-cc28f-deployment",
+      "UnauthRoleName": "amplify-playground-prod-cc28f-unauthRole",
+      "StackName": "amplify-playground-prod-cc28f",
+      "StackId": "arn:aws:cloudformation:eu-west-2:449491765399:stack/amplify-playground-prod-cc28f/4ddf3190-e23d-11ef-843d-02c496b1fb5d",
+      "AmplifyAppId": "d1tlhw7ava0ra"
     }
   }
 }

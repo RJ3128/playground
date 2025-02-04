@@ -1,13 +1,8 @@
 {
-<<<<<<< HEAD
   "providers": [
     "awscloudformation"
   ],
   "projectName": "playground",
-=======
-  "whyContinueWithGen1": "Prefer not to answer",
-  "projectName": "play2",
->>>>>>> main
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
@@ -15,7 +10,7 @@
     "config": {
       "SourceDir": "src",
       "DistributionDir": "dist",
-      "BuildCommand": "npm.cmd run-script build",
+      "BuildCommand": "npm run build",
       "StartCommand": "ng serve"
     }
   }
